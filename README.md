@@ -32,7 +32,7 @@ docker run -p <HOST_PORT>:<CONTAINER_PORT> udpipe-server
 * HOST_PORT: the port on your host machine
 * CONTAINER_PORT: the port within the container which is specified in Dockerfile
 
-To stop the server you need to stop the container (use Docker Desktop) and delete it. When you start the server again, you don't need to build a new image, just run a new container.
+To stop the server, you need to stop the container and delete it (use Docker Desktop). When you start the server again, you don't need to build a new image, just run a new container.
 
 ## Step 6
 Once all the modules are installed and the server is up and running, you can test it by opening the link in your browser:
