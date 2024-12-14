@@ -32,6 +32,8 @@ docker run -p <HOST_PORT>:<CONTAINER_PORT> udpipe-server
 * HOST_PORT: the port on your host machine
 * CONTAINER_PORT: the port within the container which is specified in Dockerfile
 
+To stop the server you need to stop the container (use Docker Desktop) and delete it. When you start the server again, you don't need to build a new image, just run a new container.
+
 ## Step 6
 Once all the modules are installed and the server is up and running, you can test it by opening the link in your browser:
 ```
@@ -40,7 +42,7 @@ http://localhost:<HOST_PORT>/process?tokenizer&tagger&parser&data=<TEXT>
 * HOST_PORT: the port on your host machine
 * TEXT: any text in the language for which you selected the UDPipe model
 
-The first request may take a few minutes as additional dependencies are installed into the container. Subsequent requests will be faster.
+The first request may take a few minutes as additional dependencies are installed into the container. Subsequent requests will work faster.
 
 ## Step 7
 You can work with your UDPipe server via [REST API](https://lindat.mff.cuni.cz/services/udpipe/api-reference.php) using localhost address and the chosen port.
