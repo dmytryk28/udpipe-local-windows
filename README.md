@@ -29,8 +29,8 @@ Run a Docker container:
 ```
 docker run -p <HOST_PORT>:<CONTAINER_PORT> udpipe-server 
 ```
-* HOST_PORT: the port on your host machine
-* CONTAINER_PORT: the port within the container which is specified in Dockerfile
+* `HOST_PORT`: the port on your host machine
+* `CONTAINER_PORT`: the port within the container which is specified in Dockerfile
 
 To stop the server, you need to stop the container and delete it (use Docker Desktop). When you start the server again, you don't need to build a new image, just run a new container.
 
@@ -39,8 +39,8 @@ Once all the modules are installed and the server is up and running, you can tes
 ```
 http://localhost:<HOST_PORT>/process?tokenizer&tagger&parser&data=<TEXT>
 ```
-* HOST_PORT: the port on your host machine
-* TEXT: any text in the language for which you selected the UDPipe model
+* `HOST_PORT`: the port on your host machine
+* `TEXT`: any text in the language for which you selected the UDPipe model
 
 The first request may take a few minutes as additional dependencies are installed into the container. Subsequent requests will work faster.
 
